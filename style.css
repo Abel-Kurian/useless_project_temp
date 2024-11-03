@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("images/abel_funny.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.upload-label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+/* Style uploaded photo */
+.upload-photo {
+    width: 500px;
+    height: auto;
+    max-height: 1000px;
+    display: block;
+}
+
+/* Hide the actual file input */
+.upload-input {
+    display: none;
+}
+
+/* Filter overlay styles */
+.mustache, .hat {
+    position: absolute;
+    display: none; /* Hide by default */
+    width: 100px; /* Adjust size as needed */
+}
+
+.mustache {
+    top: 50%; /* Adjust position based on face location */
+    left: 45%;
+}
+
+.hat {
+    top: 20%; /* Adjust position based on head location */
+    left: 35%;
+}
+
+/* Class to display filters */
+.show {
+    display: block;
+}
+
